@@ -1,0 +1,148 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-sale{
+    display: flex;
+    background-color: #ffc732;
+    /* background-color: royalblue; */
+    min-height: 60vh;
+    line-height: 12rem;
+     width: 100%;
+ } 
+.banner-sale .banner-girl img{
+   
+    display: flex;
+    position: absolute;
+    height: 60vh;
+    left: 128px;
+    right: 113px;
+}
+
+.banner-sale .banner-girl h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-weight: 800;
+    left: 90rem;
+    top: 100px;
+}
+.banner-sale .banner-girl .sale-2{
+    left: 85rem;
+}
+@media only screen and (max-width: 567px) {
+    .banner-sale .banner-girl img{
+        height: 40vh;
+        left: 6rem;
+    }
+    .banner-sale .banner-girl .sale-2{
+        left: 6rem;
+        top: 200px;
+    }
+    
+}
+.prod-banner{
+    margin-top: 30px;
+    background-color: black;
+    min-height: 50vh;
+}
+.shop-by-brand .by-brands{
+    float: left;
+    width: 25%;
+    padding: 19px;
+    display: grid;
+}
+.shop-by-brand .by-brands img{
+    height: 350px;
+    transition: all 300ms ease-in-out;
+}
+.shop-by-brand .by-brands img:hover{
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+}
+@media only screen  and (max-width: 567px){
+.shop-by-brand .by-brands{
+    width: 80%;
+}    
+}
+.shop-by-brand .for-kids{
+    /* margin-left: 10px; */
+    float: left;
+    width: 20%;
+    padding: 19px;
+    display: grid;
+}
+.shop-by-brand .for-kids img{
+    height: 90%;
+    transition: all 300ms ease-in-out;
+}
+.shop-by-brand .for-kids img:hover{
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+}
+@media only screen and (max-width: 567px){
+    .shop-by-brand .for-kids{
+        width: 80%;
+    }
+} 
+
+/* ====== Footer ======== */
+footer{
+    padding: 40px 0;
+    background-color: black;
+}
+footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid grey;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+footer .social a:hover{
+    opacity: 0.9;
+}
+footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+footer ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+footer ul a:hover{
+    text-decoration: underline;
+}
+footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+footer ul li:hover{
+    opacity: 1;
+}
+footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+}

@@ -1,0 +1,118 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.shop{
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.shop .products{
+    /* margin-left: 10px; */
+    float: left;
+/* margin-left: 5px; */
+    width: 20%;
+    padding: 19px;
+    display: grid;
+}
+.shop .products img{
+    height: 90%;
+    transition: all 300ms ease-in-out;
+}
+.shop .products img:hover{
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+}
+@media only screen and (max-width: 567px){
+    .shop .products{
+        width: 80%;
+    }
+} 
+.shop .products h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.shop .products h5 strike{
+    color: green;
+}
+.shop .title{
+        /* margin: 4rem 0 7rem 0; */
+        text-align: center;
+    }
+    
+  .shop .title h2{
+        font-size: 3rem;
+        display: inline-block;
+        position: relative;
+        /* z-index: 0; */
+    }
+    
+   .shop .title h2::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -20%;
+        transform: translate(-50%,-50%);
+        background-color: palevioletred;
+        width: 50%;
+        height: 0.4rem;
+        /* z-index: 1; */
+    }
+/* ====== Footer ======== */
+footer{
+    padding: 40px 0;
+    background-color: black;
+}
+footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid grey;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+footer .social a:hover{
+    opacity: 0.9;
+}
+footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+footer ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+footer ul a:hover{
+    text-decoration: underline;
+}
+footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+footer ul li:hover{
+    opacity: 1;
+}
+footer .copyright{ 
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    font-size: 13px;
+}
